@@ -1,0 +1,62 @@
+body, html {
+    background: url("../images/congruent_pentagon.png");
+    font-size: 16px;
+
+
+}
+
+
+#heading {
+    max-width: 300px;
+    background-color: coral;
+    padding: 10px;
+    margin: 10px;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+#instructions {
+    max-width: 300px;
+    background-color: khaki;
+    padding: 20px 10px;
+    margin: 10px;
+
+}
+
+#target-nbr {
+    max-width: 190px;
+    background-color: darkseagreen;
+    float: left;
+    margin: 10px;
+    font-size: 30px;
+
+}
+
+#wins-losses {
+    max-width: 90px;
+    background-color: aqua;
+    float: none;
+    margin: 10px;
+
+}
+
+#crystals {
+    max-width: 500px;
+    clear: both;
+    margin: 10px;
+}
+
+img {
+    float: left;
+    margin: 10px;
+
+}
+
+#score {
+    max-width: 300px;
+    background-color: darkcyan;
+    clear: both;
+    margin: 10px;
+}
