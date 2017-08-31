@@ -9,48 +9,45 @@ $(document).ready(function () {
 
 
 
+
     var counter = 0;
-    var numberOptions = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+    var crystalValue = 0;
+    var wins = 0;
+    var losses = 0;
 
-
-    // on click of a crystal, add to the counter by the value of this crystal
+    // on click of a crystal, assign a value to the crystal
     $(".crystal").on("click", function() {
 
-        counter += increment;
+        crystalValue = Math.floor((Math.random() * 12) + 1);
+        crystalValue = parseInt(crystalValue);
 
-        console.log("your new score is " + counter);
+        counter += crystalValue;
+        $("#your-score").text(counter);
+        console.log(crystalValue);
+        console.log(counter);
 
         if (counter === targetNumber) {
+            wins++;
+            $("#wins").text(wins);
             console.log("you win!");
         }
         else if (counter >= targetNumber) {
+            losses++;
+            $("#losses").text(losses);
             console.log("you lose!");
         }
 
     });
 
 
-
-
 });
 
 
+
+
 //still need to:
-//     assign random value from numberOptions array to clicked crystal
 //     keep that value assigned to that crystal (but not all crystals) for duration of game
-//     increase score by value of crystal
 
 
-// var crystalValue = numberOptions[Math.round(Math.random())];
-
-// for (var i = 0; i < numberOptions.length; i++) {
-//     crystal.attr("data-crystalvalue", numberOptions[i]);
-// }
 
 // var crystalValue = ($(this).attr("data-crystalvalue"));
-// crystalValue = parseInt(crystalValue);
-// counter += crystalValue;
-
-// function randomFrom(numberOptions) {
-//     console.log(numberOptions[Math.floor(Math.random() * numberOptions.length)]);
-// }

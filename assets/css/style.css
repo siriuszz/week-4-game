@@ -5,20 +5,24 @@ body, html {
 
 }
 
+p {
+    margin-bottom: 10px;
+}
 
 #heading {
-    max-width: 300px;
+    width: 400px;
     background-color: coral;
+    color: white;
     padding: 10px;
     margin: 10px;
 }
 
 h1 {
-    font-size: 24px;
+    font-size: 45px;
 }
 
 #instructions {
-    max-width: 300px;
+    width: 400px;
     background-color: khaki;
     padding: 20px 10px;
     margin: 10px;
@@ -26,19 +30,21 @@ h1 {
 }
 
 #target-nbr {
-    max-width: 190px;
+    width: 240px;
     background-color: darkseagreen;
-    float: left;
     margin: 10px;
-    font-size: 30px;
+    padding: 25px 10px;
+    float: left;
+    font-size: 40px;
 
 }
 
 #wins-losses {
-    max-width: 90px;
-    background-color: aqua;
-    float: none;
-    margin: 10px;
+    width: 140px;
+    background-color: deepskyblue;
+    float: left;
+    margin: 10px 5px;
+    padding: 19px 0px 19px 5px;
 
 }
 
@@ -55,8 +61,10 @@ img {
 }
 
 #score {
-    max-width: 300px;
+    width: 400px;
     background-color: darkcyan;
+    color: white;
     clear: both;
     margin: 10px;
+    padding: 10px 10px 50px 10px;
 }
